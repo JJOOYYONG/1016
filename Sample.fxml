@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Label layoutX="36.0" layoutY="79.0" prefHeight="24.0" prefWidth="63.0" style="-fx-background-color: lightblue;" text="번호">
+         <font>
+            <Font name="D2Coding" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="245.0" prefHeight="24.0" prefWidth="63.0" style="-fx-background-color: lightblue;" text="폰번호">
+         <font>
+            <Font name="D2Coding" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="190.0" prefHeight="24.0" prefWidth="63.0" style="-fx-background-color: lightblue;" text="이메일">
+         <font>
+            <Font name="D2Coding" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="139.0" prefHeight="24.0" prefWidth="63.0" style="-fx-background-color: lightblue;" text="이름">
+         <font>
+            <Font name="D2Coding" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNo" layoutX="120.0" layoutY="77.0" prefHeight="24.0" prefWidth="120.0">
+         <font>
+            <Font name="D2Coding" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfName" layoutX="120.0" layoutY="135.0" prefHeight="24.0" prefWidth="120.0">
+         <font>
+            <Font name="D2Coding" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfEmail" layoutX="120.0" layoutY="188.0" prefHeight="24.0" prefWidth="120.0">
+         <font>
+            <Font name="D2Coding" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfTel" layoutX="120.0" layoutY="243.0" prefHeight="24.0" prefWidth="120.0">
+         <font>
+            <Font name="D2Coding" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAdd" layoutX="120.0" layoutY="398.0" mnemonicParsing="false" text="추가">
+         <font>
+            <Font name="D2Coding" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDel" layoutX="186.0" layoutY="398.0" mnemonicParsing="false" text="삭제">
+         <font>
+            <Font name="D2Coding" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTotal" layoutX="36.0" layoutY="398.0" mnemonicParsing="false" text="전체보기">
+         <font>
+            <Font name="D2Coding" size="14.0" />
+         </font></Button>
+      <TableView fx:id="tableView" layoutX="282.0" layoutY="76.0" prefHeight="348.0" prefWidth="297.0">
+        <columns>
+          <TableColumn fx:id="tcNo" prefWidth="75.0" text="번호" />
+          <TableColumn fx:id="tcName" prefWidth="75.0" text="이름" />
+            <TableColumn fx:id="tcEmail" prefWidth="75.0" text="이메일" />
+            <TableColumn fx:id="tcTel" prefWidth="75.0" text="폰번호" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
